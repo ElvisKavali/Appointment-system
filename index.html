@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Doctor Appointment System</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Doctor Appointment System</h1>
+    </header>
+    <main>
+        <section class="doctors" id="doctor-list">
+            <h2>Available Doctors</h2>
+            <div class="doctor" onclick="bookAppointment('Dr. Elvis', 'Cardiology')">
+                <h3>Dr. Elvis</h3>
+                <p>Specialty: Cardiology</p>
+            </div>
+            <div class="doctor" onclick="bookAppointment('Dr. Kavali', 'Dermatology')">
+                <h3>Dr. Kavali</h3>
+                <p>Specialty: Dermatology</p>
+            </div>
+            <div class="doctor" onclick="bookAppointment('Dr. Diana', 'Pediatrics')">
+                <h3>Dr. Diana</h3>
+                <p>Specialty: Pediatrics</p>
+            </div>
+        </section>
+        <section class="appointments" id="appointment-list">
+            <h2>Your Appointments</h2>
+            <ul id="appointments"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Online Doctor Appointment System</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
